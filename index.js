@@ -288,4 +288,4 @@ client.on('roleDelete', role => {
     client.botlogs.send({embeds: [roleEmbed]}).catch(err => {});
 });
 
-client.login(config.token);
+client.login(process.env.token);
